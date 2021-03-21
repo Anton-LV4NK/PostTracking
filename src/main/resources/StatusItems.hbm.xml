@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping
+        PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.PostTracking.Model.StatusItems" table="status_items">
+
+        <id name="id" type="long" column="id">
+            <generator class="identity"/>
+        </id>
+
+        <property name="idPost" column="id_post" type="long"/>
+        <property name="idItem" column="id_item" type="long"/>
+        <property name="statusItem" column="status_item" type="long"/>
+        <property name="transferDate" column="transfer_date" type="long"/>
+        <property name="identifier" column="identifier" type="long"/>
+
+    </class>
+</hibernate-mapping>

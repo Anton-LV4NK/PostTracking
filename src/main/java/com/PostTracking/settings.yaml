@@ -1,0 +1,10 @@
+---
+#Listening port
+httpPort: 1408
+#Hibernate options
+connectionUrl: jdbc:postgresql://localhost:5432/posttracking?prepareThreshold=0
+username: postgres
+password: 123456
+showSql: false
+useQueryCache: false
+updateScheme: update

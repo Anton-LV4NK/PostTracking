@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping
+        PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.PostTracking.Model.Items" table="items">
+
+        <id name="id" type="long" column="id">
+            <generator class="identity"/>
+        </id>
+
+        <property name="identifier" column="identifier" type="long"/>
+        <property name="type" column="type" type="long"/>
+        <property name="indexSender" column="index_sender" type="long"/>
+        <property name="indexReceiver" column="index_receiver" type="long"/>
+        <property name="addressRecipient" type="string" >
+            <column name="address_recipient" sql-type="text"></column>
+        </property>
+        <property name="nameRecipient" type="string" >
+            <column name="name_recipient" sql-type="text"></column>
+        </property>
+
+    </class>
+</hibernate-mapping>
